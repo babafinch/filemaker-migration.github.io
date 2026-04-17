@@ -365,6 +365,38 @@ details p {
   margin: 0 auto;
 }
 
+/* Honeypot — hidden from real users, visible to naive bots */
+.hp-field {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-error {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 6px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.upload-status {
+  margin-top: 12px;
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+}
+
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;

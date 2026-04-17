@@ -4,8 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FileMaker to Rails Migration | Modernize Your Business App</title>
-  <meta name="description" content="We migrate FileMaker databases to modern Ruby on Rails web applications. Keep your data, keep your workflows, lose the limitations.">
+  <meta name="description" content="We migrate FileMaker databases to modern Ruby on Rails web applications. Keep your data, keep your workflows, lose the limitations. Fixed-price estimates.">
+  <link rel="canonical" href="https://filemaker-migration.com/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔄</text></svg>">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://filemaker-migration.com/">
+  <meta property="og:title" content="FileMaker to Rails Migration | Modernize Your Business App">
+  <meta property="og:description" content="We migrate FileMaker databases to modern Ruby on Rails web applications. Keep your data, keep your workflows, lose the limitations. Fixed-price estimates.">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FileMaker to Rails Migration | Modernize Your Business App">
+  <meta name="twitter:description" content="We migrate FileMaker databases to modern Ruby on Rails web applications. Keep your data, keep your workflows, lose the limitations. Fixed-price estimates.">
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Babafinch Inc.",
+    "url": "https://babafinch.com",
+    "email": "hello@filemaker-migration.com"
+  }
+  </script>
+
+  <!-- Structured Data: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "FileMaker to Rails Migration",
+    "description": "We migrate FileMaker databases to modern Ruby on Rails web applications. Complete data migration, business logic preservation, and zero-downtime cutover.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Babafinch Inc.",
+      "url": "https://babafinch.com"
+    },
+    "serviceType": "Database Migration",
+    "url": "https://filemaker-migration.com/"
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Will we lose any data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. We migrate every record from your FileMaker database. We also validate the migrated data against the original to ensure nothing is lost or corrupted."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does this cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide a free estimate after reviewing your FileMaker application. Once we've scoped the work, you get a fixed price for the entire migration — no hourly billing, no surprises."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can we keep using FileMaker during the migration?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We build the new system alongside your existing one. Your team continues using FileMaker until the new app is fully tested and ready. We handle the final data sync at cutover."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens after launch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide documentation and training for your team. We also offer optional ongoing support and maintenance if you want us to continue managing updates and improvements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why Ruby on Rails?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rails is a proven framework used by companies like Shopify, GitHub, and Basecamp. It's ideal for business applications: fast to develop, easy to maintain, and backed by a massive ecosystem of libraries. Your FileMaker data model maps naturally to Rails' database layer."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -31,7 +123,7 @@
         <div class="card">
           <div class="card-icon">&#128274;</div>
           <h3>Desktop-Only Access</h3>
-          <p>Your team can't work remotely or access critical data on mobile. In 2025, that's a dealbreaker.</p>
+          <p>Your team can't work remotely or access critical data on mobile. That's a dealbreaker.</p>
         </div>
         <div class="card">
           <div class="card-icon">&#128268;</div>
@@ -145,7 +237,12 @@
     <div class="container">
       <h2>Ready to Modernize? Get a Free Estimate.</h2>
       <p>Tell us about your FileMaker application and we'll send you a fixed-price estimate quickly.</p>
-      <form class="contact-form" action="#" method="POST" id="assessmentForm">
+      <form class="contact-form" action="#" method="POST" id="assessmentForm" novalidate>
+        <!-- Honeypot: real users leave this empty; bots fill it -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
         <div class="form-row">
           <div class="form-group">
             <label for="name">Name</label>
