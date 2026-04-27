@@ -103,6 +103,15 @@ document.addEventListener("DOMContentLoaded", function () {
       form.hidden = true;
       success.hidden = false;
       success.scrollIntoView({ behavior: "smooth", block: "center" });
+
+      // Google Ads conversion tracking
+      if (typeof gtag === "function") {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18123390845/PVA4CL2syaMcEP3-88FD',
+          'value': 1.0,
+          'currency': 'CAD'
+        });
+      }
     } catch (err) {
       console.error(err);
       showError(err.message || "Something went wrong. Please try again or email hello@filemaker-migration.com.");
